@@ -18,7 +18,11 @@ code {
 
 .img-size {
   transform: scale(0.4);
-  margin-right: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
 }
 
 .container{
