@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar{
+  background-color: whitesmoke;
+}
+
+.img-size {
+  transform: scale(0.4);
+  margin-right: 50%;
+}
+
+.container{
+  background-color: #F0F0F0;
+}
+
+h1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.heading-1{
+  padding-top: 2rem;
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+.heading-2{
+  color: red;
+  animation-name: slideRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes slideLeft{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight{
+  from{
+    transform: translateX(300px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+
+::-webkit-scrollbar{
+  width:15px;
+}
+::-webkit-scrollbar-track{
+  background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#1aadea,#242323);
+}
