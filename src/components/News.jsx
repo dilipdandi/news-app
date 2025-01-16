@@ -77,7 +77,7 @@ export class News extends Component {
             return <div className='col-md-4' key={element.url}>
               <NewsItems title={element.title ? element.title : " "} 
               description={element.description ? element.description : " "}
-               imageUrl={element.urlToImage}/>
+               imageUrl={element.urlToImage} newsUrl={element.url}/>
           </div>
           })}
          <div className='container d-flex justify-content-between'>
